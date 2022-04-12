@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+class Settings extends StatefulWidget {
+  const Settings({Key? key}) : super(key: key);
+  static const routeName = "/Settings-screen";
+
+  @override
+  State<Settings> createState() => _SettingsState();
+}
+
+class _SettingsState extends State<Settings> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: const Text("setings"),
+      ),
+    );
+  }
+}
